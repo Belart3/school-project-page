@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Group 6 Project</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="first-nav">
+            <a href="index.html"><img src="images/logo.jpg" alt="logo image" class="logo"></a>
+            <div class="contact-container">
+
+                <div class="contact-details-container">
+                    <img src="images/mail-icon.png" alt="email icon" class="icon">
+                    <div class="text-container">
+                        <h4>Email</h4>
+                        <p>introtechuni@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-details-container">
+                    <img src="images/phone-icon.png" alt="telephone icon" class="icon">
+                    <div class="text-container">
+                        <h4>Call</h4>
+                        <p>Phone Us: 07000000000</p>
+                    </div>
+                </div>
+            </div>
+            <a href="register.html"><button class="application-button"><p>Apply now</p></button></a>
+        </div>
+        <div class="second-nav">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+        <h3 class="registration-header">Student Registration Form</h3>
+    <div class="registration-container">
+    
+        <form class="registration-form">
+            <label for="Fname">First Name: </label>
+            <input id="Fname" type="text" maxlength="15">
+        </form>
+        <form class="registration-form">
+            <label for="Lname">Last Name: </label>
+            <input id="Lname" type="text" maxlength="15">
+        </form>
+        <form class="registration-form">
+            <label for="mobile">Phone Number: </label>
+            <input id="mobile" type="text" maxlength="11">
+        </form>
+        <form class="registration-form address">
+            <label for="address">Address: </label>
+            <textarea id="address" class="address" maxlength="50"></textarea>
+        </form>
+        <form class="registration-form">
+            <label for="sex">Sex: </label>
+            <select id="sex" name="sex">
+                <option selected disabled hidden>Gender</option>
+                <option value="volvo">Male</option>
+                <option value="saab">Female</option>
+            </select>
+        </form>
+        <form class="registration-form">
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="e.g. johnappleseed@hotmail.com" maxlength="30">
+        </form>
+        <form class="registration-form">
+            <label for="course">Choose a course:</label>
+            <select id="course" name="course">
+                <option selected disabled hidden>Choose a course</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mechanical Technology">Mechanical Technology</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Physics">Physics</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Physiology">Physiology</option>
+            </select>
+            </form>
+        <form class="registration-form">
+            <label for="DOB">Date Of Birth: </label>
+            <input id="DOB" type="date" placeholder="e.g. 20jk-1999">
+        </form>
+        <div class="button-container">
+            <button class="submit-button" id="submit"><p>Submit</p></button>
+        </div>
+    </div>
+
+        <div class="regComplete-container">
+            <div class="registration-complete">
+                <p>Registration Complete. click continue to view your profile</p>
+                <button id="continue"><p>continue</p></button>
+            </div>
+        </div>
+
+    <div class="profile-container">
+        <h2>PERSONAL DETAILS</h2>
+        <div class="profile-details">
+            <div class="title">
+                <p class="profile-text">Name </p>
+            </div>
+             <div class="content">
+                <span id="profileFname" class="profile-text-details"></span> <span id="profileLname" class="profile-text-details"></span>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <div class="title">
+                <p class="profile-text">Registration Number </p>
+            </div> 
+            <div class="content">
+                <span id="regNumber" class="profile-text-details">20jk_ <span class="random-number profile-text-details"></span></span>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <div class="title">
+                <p class="profile-text">Department  </p>
+            </div>
+             <div class="content">
+                <span id="department" class="profile-text-details"></span>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <div class="title">
+                <p class="profile-text">mobile number  </p>
+            </div>
+            <div class="content">
+                <span id="Pnumber" class="profile-text-details"></span>
+            </div>
+        </div>
+        <div class="profile-details address">
+            <div class="title address">
+                <p class="profile-text">address  </p>
+            </div>
+            <div class="content address">
+                <span id="location" class="profile-text-details"></span>
+            </div>
+        </div>
+        <div class="profile-details">
+            <div class="title">
+                <p class="profile-text">email address </p>
+            </div>
+            <div class="content">
+                <span id="email-address" class="profile-text-details"></span>
+            </div>
+        </div>
+        <div class="profile-details">
+            <div class="title">
+                <p class="profile-text">date of birth  </p>
+            </div>
+            <div class="content">
+                <span id="date-of-birth" class="profile-text-details"></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <a href="index.html"><img src="images/logo.jpg" alt="" class="logo"></a>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="links">
+                <div class="contact-details-container">
+                    <img src="images/mail-icon.png" alt="email icon" class="icon">
+                    <div class="text-container">
+                        <h4>Email</h4>
+                        <p>introtechuni@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="contact-details-container">
+                    <img src="images/phone-icon.png" alt="telephone icon" class="icon">
+                    <div class="text-container">
+                        <h4>Call</h4>
+                        <p>Phone Us: 07000000000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
